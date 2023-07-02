@@ -7,7 +7,7 @@ namespace CSharp_intermediate
 		public string Name;
 		public List<Order> Orders;
 
-		// declaing Constructors (include the default one)
+		// declaring Constructors (include the default one)
 		public Customer()
 		{
 			Orders = new List<Order>();
