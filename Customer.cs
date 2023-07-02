@@ -5,7 +5,7 @@ namespace CSharp_intermediate
 	{
 		public int Id;
 		public string Name;
-		public List<Order> Orders;
+		public readonly List<Order> Orders;
 
 		// declaring Constructors (include the default one)
 		public Customer()
@@ -23,6 +23,12 @@ namespace CSharp_intermediate
 			: this(id)
 		{
 			this.Name = name;
+		}
+
+		public void Promote()
+		{
+			//Orders = new List<Order>();
+
 		}
 	}
 }

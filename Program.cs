@@ -1,10 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using CSharp_intermediate;
 
-//var customer = new Customer();
-
-//var order = new Order();
-//customer.Orders.Add(order);
 
 
 // implement global exception handling mechanism - so the app wont crash despite error
@@ -33,6 +29,15 @@ Console.WriteLine(calculator.Add(1, 2, 3));
 Console.WriteLine(calculator.Add(1, 2, 3 ,4 ));
 Console.WriteLine(calculator.Add(new int[] {1,2,3,4,5}));
 
+// fields: readonly modifier
+var customer = new Customer();
 
+var order = new Order();
+customer.Orders.Add(order);
+customer.Orders.Add(order);
+
+customer.Promote();
+
+Console.WriteLine(customer.Orders.Count);
 
 
