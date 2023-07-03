@@ -40,8 +40,13 @@ customer.Promote();
 
 Console.WriteLine(customer.Orders.Count);
 
-var person = new Person();
-person.SetBirthdate(new DateTime(1982, 1, 1));
-Console.WriteLine(person.GetBirthdate());
+//person.SetBirthdate(new DateTime(1982, 1, 1));
+//Console.WriteLine(person.GetBirthdate());
+
+
+// properties
+var person = new Person(new DateTime(1982, 1, 1));
+
+Console.WriteLine(person.Age);
 
 
