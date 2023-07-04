@@ -56,4 +56,7 @@ cookie["name"] = "Doris";
 Console.WriteLine(cookie["name"]);
 
 
-
+// inheritance
+var text = new Text();
+text.Width = 100;
+text.Copy();
