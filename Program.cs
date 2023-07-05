@@ -60,3 +60,13 @@ Console.WriteLine(cookie["name"]);
 var text = new Text();
 text.Width = 100;
 text.Copy();
+
+
+// compostion
+var logger = new Logger();
+
+var dbMigrator = new DbMigrator(logger);
+var installer = new Installer(logger);
+
+dbMigrator.Migrate();
+installer.Install();
