@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using CSharp_intermediate;
+using Amazon;
 
 
 
@@ -31,6 +32,8 @@ Console.WriteLine(calculator.Add(new int[] {1,2,3,4,5}));
 
 // fields: readonly modifier
 var customer = new Customer();
+var calculator1 = new RateCalculator();
+
 
 var order = new Order();
 customer.Orders.Add(order);
@@ -57,12 +60,12 @@ Console.WriteLine(cookie["name"]);
 
 
 // inheritance
-var text = new Text();
-text.Width = 100;
-text.Copy();
+var text = new Text(); //Text inherit by PresentationObject
+text.Width = 100; //PresentationObject.Width
+text.Copy(); //PresentationObject.Copy()
 
 
-// compostion
+// composition
 var logger = new Logger();
 
 var dbMigrator = new DbMigrator(logger);
