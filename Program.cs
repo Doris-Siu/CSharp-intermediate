@@ -32,16 +32,16 @@ Console.WriteLine(calculator.Add(new int[] {1,2,3,4,5}));
 
 // fields: readonly modifier
 var customer = new Customer();
-var calculator1 = new RateCalculator();
+//var calculator1 = new RateCalculator();
 
 
 var order = new Order();
-customer.Orders.Add(order);
-customer.Orders.Add(order);
+//customer.Orders.Add(order);
+//customer.Orders.Add(order);
 
 customer.Promote();
 
-Console.WriteLine(customer.Orders.Count);
+//Console.WriteLine(customer.Orders.Count);
 
 //person.SetBirthdate(new DateTime(1982, 1, 1));
 //Console.WriteLine(person.GetBirthdate());
@@ -73,3 +73,6 @@ var installer = new Installer(logger);
 
 dbMigrator.Migrate();
 installer.Install();
+
+//Constructor inheritance
+var car = new Car();
