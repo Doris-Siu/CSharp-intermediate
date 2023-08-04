@@ -75,4 +75,4 @@ dbMigrator.Migrate();
 installer.Install();
 
 //Constructor inheritance
-var car = new Car();
+var car = new Car("xyz123");
