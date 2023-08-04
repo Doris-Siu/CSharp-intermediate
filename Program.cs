@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using CSharp_intermediate;
 using Amazon;
+using System.Collections;
 
 
 
@@ -77,7 +78,7 @@ installer.Install();
 //Constructor inheritance
 var car = new Car("xyz123");
 
-//Upcasting - implcit casting
+//Upcasting - implicit casting
 Text text1 = new Text();
 Shape shape = text;
 
@@ -85,3 +86,21 @@ text.Width = 200;
 shape.Width = 100;
 
 Console.WriteLine(text.Width);
+
+StreamReader reader = new StreamReader(new MemoryStream());
+
+//ArrayList vs List - non-generic vs generic class type
+var list = new ArrayList();
+list.Add(1);
+list.Add("doris");
+list.Add(new Text());
+
+var anotherList = new List<int>();
+
+//Downcasting - explicit casting
+Shape shape1 = new Text();
+Text text2 = (Text)shape1;
+
+
+
+
