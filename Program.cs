@@ -62,7 +62,7 @@ Console.WriteLine(cookie["name"]);
 // inheritance
 var text = new Text(); //Text inherit by PresentationObject
 text.Width = 100; //PresentationObject.Width
-text.Copy(); //PresentationObject.Copy()
+//text.Copy(); //PresentationObject.Copy()
 
 
 // composition
@@ -76,3 +76,12 @@ installer.Install();
 
 //Constructor inheritance
 var car = new Car("xyz123");
+
+//Upcasting - implcit casting
+Text text1 = new Text();
+Shape shape = text;
+
+text.Width = 200;
+shape.Width = 100;
+
+Console.WriteLine(text.Width);

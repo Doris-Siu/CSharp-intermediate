@@ -1,7 +1,7 @@
 ﻿using System;
 namespace CSharp_intermediate
 {
-	public class Text : PresentationObject
+	public class Text : Shape
 	{
 		public int FontSize { get; set; }
 		public string FontName { get; set; }
