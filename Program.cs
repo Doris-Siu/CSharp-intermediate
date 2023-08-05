@@ -102,5 +102,13 @@ Shape shape1 = new Text();
 Text text2 = (Text)shape1;
 
 
+// Polymorphism - Method Overriding
+var shapes = new List<Shape>();
+shapes.Add(new Circle());
+shapes.Add(new Rectangle());
+
+var canvas = new Canvas();
+canvas.DrawShapes(shapes);
+
 
 
