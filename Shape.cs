@@ -28,16 +28,28 @@ namespace CSharp_intermediate
         }
     }
 
-	public class Shape
+	public abstract class Shape
 	{
 		public int Width { get; set; }
 		public int Height { get; set; }
 		public int X { get; set; }
 		public int Y { get; set; }
 
-		public virtual void Draw()
+
+		// Abstract Modifier - force other developers to follow your design
+		// avoid the risk of a developer accidentally derive a class without method overriding
+		public abstract void Draw();
+
+		public void Copy()
 		{
+			Console.WriteLine("Copy shape onto clipboard.");
 		}
+
+		public void Select()
+		{
+			Console.WriteLine("Select the shape.");
+		}
+		
 
 	}
 }
